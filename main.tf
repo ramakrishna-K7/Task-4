@@ -15,7 +15,7 @@ resource "docker_image" "nginx" {
 
 resource "docker_container" "nginx_container" {
   name  = "nginx-tf"
-  image = docker_image.nginx.latest
+  image = docker_image.nginx.name
   ports {
     internal = 80
     external = 8080
