@@ -14,7 +14,7 @@ resource "docker_image" "nginx" {
 }
 
 resource "docker_container" "nginx_container" {
-  name  = "nginx-tf"
+  name  = "Cont1"
   image = docker_image.nginx.name
   ports {
     internal = 80
